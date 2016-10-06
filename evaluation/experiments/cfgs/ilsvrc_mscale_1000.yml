@@ -1,0 +1,18 @@
+TEST:
+  SCALES: !!python/tuple [400,500,600,700,800]
+  MAX_SIZE: 1000
+  # Overlap threshold used for non-maximum suppression (suppress boxes with
+  # IoU >= this threshold)
+  NMS: 0.4
+  PROPOSAL_METHOD: 'slide'
+  BBOX_REG: true
+  LR_FLIP: true
+  BBOX_VOTE: true
+
+EXP_DIR: craft_ilsvrc
+# The mapping from image coordinates to feature map coordinates might cause
+# some boxes that are distinct in image space to become identical in feature
+# coordinates. If DEDUP_BOXES > 0, then DEDUP_BOXES is used as the scale factor
+# for identifying duplicate boxes.
+# 1/16 is correct for {Alex,Caffe}Net, VGG_CNN_M_1024, and VGG16
+DEDUP_BOXES: 0.0
