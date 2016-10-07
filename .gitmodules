@@ -1,0 +1,3 @@
+[submodule "caffe_fast_rcnn_fast"]
+	path = caffe_fast_rcnn_fast
+	url = https://github.com/craftGBD/caffe-GBD.git
