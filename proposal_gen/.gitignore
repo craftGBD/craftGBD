@@ -1,0 +1,17 @@
+*.tmp
+*.temp
+*.caffemodel
+*.mat
+*.swp
+data/
+annotation/
+bin/
+model/
+temp.*
+*.asv
+diary/
+output/
+testout/
+script_start.m
+*.mexa64
+*.mexw64
