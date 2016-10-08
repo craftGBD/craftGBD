@@ -3,7 +3,7 @@ cd(fileparts(mfilename('fullpath')));
 
 try
     fprintf('Downloading BN data...\n');
-    urlwrite('https://onedrive.live.com/download?cid=2D6AAB50CBDC610F&resid=2D6AAB50CBDC610F%211461&authkey=APnggEjkWW1cPEw', ...
+    urlwrite('https://onedrive.live.com/embed?cid=562BEF628FB22588&resid=562BEF628FB22588%21575&authkey=AGlMhutVZbYqPdk', ...
         'BN_data.zip');
     fprintf('Unzipping...\n');
     unzip('BN_data.zip', '../BN_1k');
