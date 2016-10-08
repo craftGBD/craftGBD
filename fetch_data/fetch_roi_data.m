@@ -3,7 +3,7 @@ cd(fileparts(mfilename('fullpath')));
 
 try
     fprintf('Downloading rois...\n');
-    urlwrite('https://onedrive.live.com/download?cid=2D6AAB50CBDC610F&resid=2D6AAB50CBDC610F%211461&authkey=APnggEjkWW1cPEw', ...
+    urlwrite('https://onedrive.live.com/download?cid=562BEF628FB22588&resid=562BEF628FB22588%21576&authkey=AM1PFNORZu79_pM', ...
         'rois.zip');
     fprintf('Unzipping...\n');
     unzip('rois.zip', '..');
