@@ -3,9 +3,10 @@
 2. Preparation for Training & Testing
 3. Tesing the models on ImageNet val2 data
 4. Training the models on ImageNet data
-5. Generating proposals.
+5. Generating proposals
+6. Pre-trained models
 
-## -------------- Folder meanings --------------
+## --------------------------- Folder meanings ---------------------------
 ### BN_1k
 The folder that contains the trained GBD-Net based on BN-Net. Training code is also provided.
 
@@ -33,7 +34,7 @@ Scripts used for fetching additional data from cloud drive.
 3. run fetch_data/fetch_ResNet_data.m to download pre-trained models for GBD-Net based on ResNet-269.
 4. run fetch_data/fetch_roi_data.m to download the generated proposals for training. You can generate the proposals by yourself, in this case please refer to README in proposal_gen folder.
 
-## -------------- Tesing the models on ImageNet val2 data -------------
+## -------------- Tesing the models on ImageNet val2 data ----------------
 There are two models released, GDB-Net based on BN-Net and GDB-Net based on ResNet-269.
 The following steps show how to test GDB-Net based on BN-Net, steps for ResNet-269 is slightly different.
 
@@ -70,7 +71,7 @@ To Test the accurate version of GBD-Net based on ResNet-269, the corresponding s
 
 The mean AP is 63.7.
 
-##--------- Training the GBD-Net model using ImageNet data ----------
+##--------- Training the GBD-Net model using ImageNet data ---------------
 1. Go to the folder "BN_1k".
 cd BN_1k
 
@@ -88,5 +89,27 @@ models/BN_M_region_iter_120000.caffemodel
 3. after the above two stages, the final model is
 models/BN_GBD_iter_120000.caffemodel
 
-##------------------------- Generating proposals -------------------------
-please refer to README in proposal_gen folder
+##-------------------------- Generating proposals ------------------------
+Please refer to README in proposal_gen folder
+
+##--------------------------- Pre-trained models -------------------------
+These are models trained by ourselves with identity mapping & stochastic depth.
+
+|                            | ResNet-101 | ResNet-152 | ResNet-269 |
+| -------------------------- |:----------:| :---------:| ----------:|
+| Top-1 accuracy (single crop) | 78.21%     | 79.39%     | 80.34%     |
+| Top-5 accuracy (single crop) | 93.95%     | 94.62%     | 95.04%     |
+
+**Download**
+
+ResNet-101: [GoogleDrive](https://drive.google.com/drive/folders/0B67_d0rLRTQYd1NTTi1nWE9US2M?usp=sharing)
+
+ResNet-152: [GoogleDrive](https://drive.google.com/drive/folders/0B67_d0rLRTQYX2FMMFg1QU5MYTA?usp=sharing)
+
+ResNet-269: [GoogleDrive](https://drive.google.com/drive/folders/0B67_d0rLRTQYM0FRVk9KT3laSGM?usp=sharing)
+
+**Notice**
+
+These models were trained with a modified caffe(https://github.com/yjxiong/caffe/tree/mem), which is different in BN layer with the offical version.
+
+For any details please contact xiaotong@ee.cuhk.edu.hk(https://github.com/Cysu).
