@@ -5,6 +5,7 @@
 4. Training the models on ImageNet data
 5. Generating proposals
 6. Pre-trained models
+7. Contacts
 
 ## --------------------------- Folder meanings ---------------------------
 ### BN_1k
@@ -112,4 +113,9 @@ ResNet-269: [GoogleDrive](https://drive.google.com/drive/folders/0B67_d0rLRTQYM0
 
 These models were trained with a modified caffe(https://github.com/yjxiong/caffe/tree/mem), which is different in BN layer with the offical version.
 
-For any details please contact xiaotong@ee.cuhk.edu.hk(https://github.com/Cysu).
+##------------------------------ Contacts ---------------------------------
+For details about GBD, please contact Wanli Ouyang(wlouyang@ee.cuhk.edu.hk)
+
+For details about code usage, please contact Yucong Zhou(zhouyucong@sensetime.com)
+
+For details about pre-trained models, please contact Tong Xiao(xiaotong@ee.cuhk.edu.hk)
