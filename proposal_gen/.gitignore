@@ -12,6 +12,5 @@ temp.*
 diary/
 output/
 testout/
-script_start.m
 *.mexa64
 *.mexw64
