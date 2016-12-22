@@ -6,7 +6,6 @@
 data/
 annotation/
 bin/
-model/
 temp.*
 *.asv
 diary/
