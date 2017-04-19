@@ -1,4 +1,4 @@
-#Structure of this README
+# Structure of this README
 1. Folder meanings
 2. Preparation for Training & Testing
 3. Tesing the models on ImageNet val2 data
@@ -72,7 +72,7 @@ To Test the accurate version of GBD-Net based on ResNet-269, the corresponding s
 
 The mean AP is 63.7.
 
-##--------- Training the GBD-Net model using ImageNet data ---------------
+## --------- Training the GBD-Net model using ImageNet data ---------------
 1. Go to the folder "BN_1k".
 cd BN_1k
 
@@ -90,10 +90,10 @@ models/BN_M_region_iter_120000.caffemodel
 3. after the above two stages, the final model is
 models/BN_GBD_iter_120000.caffemodel
 
-##-------------------------- Generating proposals ------------------------
+## -------------------------- Generating proposals ------------------------
 Please refer to README in proposal_gen folder
 
-##--------------------------- Pre-trained models -------------------------
+## --------------------------- Pre-trained models -------------------------
 These are models trained by ourselves with identity mapping & stochastic depth.
 
 |                            | ResNet-101 | ResNet-152 | ResNet-269 |
@@ -113,7 +113,7 @@ ResNet-269: [GoogleDrive](https://drive.google.com/drive/folders/0B67_d0rLRTQYM0
 
 These models were trained with a modified caffe(https://github.com/yjxiong/caffe/tree/mem), which is different in BN layer with the offical version.
 
-##------------------------------ Contacts ---------------------------------
+## ------------------------------ Contacts ---------------------------------
 For details about GBD, please contact Wanli Ouyang(wlouyang@ee.cuhk.edu.hk)
 
 For details about code usage, please contact Yucong Zhou(zhouyucong@sensetime.com)
